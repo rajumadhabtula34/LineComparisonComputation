@@ -1,18 +1,19 @@
-## UC2 - Check Equality of Two Lines
+## UC3 - Compare Two Lines
 
 ### Objective
 
-Check whether two lines are equal by comparing their lengths.
-
-### Formula
-
-Length = √((x2 − x1)² + (y2 − y1)²)
+Compare the lengths of two lines using the `compareTo()` method.
 
 ### Logic
 
 * Calculate the lengths of two lines.
-* Use the `equals()` method of the `Double` class to compare the lengths.
+* Use the `compareTo()` method of the `Double` class.
+* Determine whether:
+
+  * Line 1 is equal to Line 2
+  * Line 1 is greater than Line 2
+  * Line 1 is less than Line 2
 
 ### Output
 
-Displays the lengths of both lines and whether they are equal.
+Displays the comparison result of the two line lengths.
