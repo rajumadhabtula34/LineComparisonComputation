@@ -1,28 +1,13 @@
-# Line Comparison Computation
+## UC1 - Calculate Length of a Line
 
-## Description
+### Objective
 
-This project demonstrates Line Comparison Computation using Java Programming and Object-Oriented Programming concepts.
+Calculate the length of a line using two points in the Cartesian coordinate system.
 
-## Technologies Used
+### Formula
 
-* Java
-* Eclipse IDE
-* Git
-* GitHub
+Length = √((x2 − x1)² + (y2 − y1)²)
 
-## Use Cases
+### Output
 
-* UC1 - Calculate Length of a Line
-* UC2 - Check Equality of Two Lines
-* UC3 - Compare Two Lines
-* UC4 - Refactor Using Object-Oriented Programming Concepts
-
-## Git Workflow
-
-* main
-* dev
-* feature/uc1-line-length
-* feature/uc2-line-equality
-* feature/uc3-line-comparison
-* feature/uc4-line-oop
+Displays the calculated length of the line.
