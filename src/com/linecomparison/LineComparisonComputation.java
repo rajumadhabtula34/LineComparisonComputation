@@ -6,32 +6,34 @@ public class LineComparisonComputation {
 
         System.out.println("Welcome to Line Comparison Computation");
 
-        // Line 1
-        int x1 = 2;
-        int y1 = 3;
-        int x2 = 6;
-        int y2 = 7;
+        Line line1 = new Line(
+                new Point(2, 3),
+                new Point(6, 7));
 
-        // Line 2
-        int x3 = 1;
-        int y3 = 2;
-        int x4 = 5;
-        int y4 = 8;
+        Line line2 = new Line(
+                new Point(1, 2),
+                new Point(5, 8));
 
-        Double line1Length = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        Double line2Length = Math.sqrt(Math.pow(x4 - x3, 2) + Math.pow(y4 - y3, 2));
+        Double length1 = line1.calculateLength();
+        Double length2 = line2.calculateLength();
 
-        System.out.println("Line 1 Length = " + line1Length);
-        System.out.println("Line 2 Length = " + line2Length);
+        System.out.println("Line 1 Length = " + length1);
+        System.out.println("Line 2 Length = " + length2);
 
-        int result = line1Length.compareTo(line2Length);
-
-        if (result == 0) {
+        if (length1.equals(length2)) {
             System.out.println("Both lines are equal.");
-        } else if (result > 0) {
-            System.out.println("Line 1 is greater than Line 2.");
         } else {
+            System.out.println("Both lines are not equal.");
+        }
+
+        int result = length1.compareTo(length2);
+
+        if (result > 0) {
+            System.out.println("Line 1 is greater than Line 2.");
+        } else if (result < 0) {
             System.out.println("Line 1 is less than Line 2.");
+        } else {
+            System.out.println("Both lines are equal.");
         }
     }
 }
