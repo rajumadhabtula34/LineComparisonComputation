@@ -5,7 +5,6 @@
 
 # Compiled Java files
 bin/
-
 *.class
 
 # Log files
